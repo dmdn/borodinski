@@ -1,0 +1,270 @@
+body {
+    margin: 1px;
+    padding: 0;
+    background: #666;
+}
+
+.clesrfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    background: #1a1a1a;
+    padding: 20px;
+    opacity: 0.3;
+    color: #fff;
+}
+
+.logo a {
+    display: block;
+    float: left;
+    background: url("../img/logo.png") no-repeat center;
+    width: 110px;
+    height: 61px;
+    font-size: 0;
+}
+
+.head-info {
+    float: right;
+}
+
+.baner {
+    text-align: center;
+    padding: 10px;
+}
+
+.form-block {
+    border-top: 1px solid #fff;
+    padding: 20px;
+}
+
+.form-block h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.registration {
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.registration input, .registration select {
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.beard-choice {
+    padding: 10px;
+    text-align: center;
+    background: #b0b0b0;
+}
+
+.beard {
+    display: inline-block;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.beard-options {
+    margin: 30px;
+}
+
+.change-block {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #000;
+    padding: 0;
+    font-size: 0;
+}
+
+.change-block input {
+    background-color: #fff;
+    width: 60px;
+    height: 30px;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+}
+
+.change-block button {
+    border: none;
+    background-color: #ccc;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.change-block button:hover {
+    background: #1a1a1a;
+    color: #666;
+}
+
+.change-block button:active {
+    background: #000;
+    color: #fff;
+}
+
+.photo-block {
+    background: #8b7355;
+    padding: 10px;
+    color: #ccc;
+    font-size: 20px;
+}
+
+.photo-block p {
+    margin-left: 20px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background-color: #fffbd0;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.upload-images_list {
+    margin: 0;
+    padding: 0;
+}
+
+.upload-images {
+    margin: 10px;
+    margin-bottom: 30px;
+    min-height: 100px;
+}
+
+.upload-images_item {
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    padding: 0;
+    margin: 10px;
+    z-index: 5;
+}
+
+.upload-images_img-wrap {
+    height: 100px;
+}
+
+.add {
+    width: 100px;
+    background: #fff484;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.add:hover {
+    opacity: 0.7;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    background-color: #fff;
+    opacity: 0.2;
+    cursor: pointer;
+    border-radius: 7px;
+    z-index: 20;
+}
+
+.delete-btn:hover {
+    opacity: 0.7;
+}
+
+.delete-btn:before, .delete-btn:after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    width: 14px;
+    height: 2px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+.delete-btn:after {
+    transform: rotate(135deg);
+}
+
+.upload-images img {
+    display: inline-block;
+    background: #ffd700;
+    height: 100%;
+    margin: 0;
+}
+
+.foot {
+    height: 100px;
+    background: #1a1a1a;
+    padding: 20px;
+    opacity: 0.7;
+    color: #fff;
+}
+
+.beard-controls label {
+    opacity: 0.5;
+}
+
+#btn-1:checked ~ .beard-controls label[for="btn-1"],
+#btn-2:checked ~ .beard-controls label[for="btn-2"],
+#btn-3:checked ~ .beard-controls label[for="btn-3"],
+#btn-4:checked ~ .beard-controls label[for="btn-4"],
+#btn-5:checked ~ .beard-controls label[for="btn-5"],
+#btn-6:checked ~ .beard-controls label[for="btn-6"],
+#btn-7:checked ~ .beard-controls label[for="btn-7"],
+#btn-8:checked ~ .beard-controls label[for="btn-8"],
+#btn-9:checked ~ .beard-controls label[for="btn-9"],
+#btn-10:checked ~ .beard-controls label[for="btn-10"] {
+    opacity: 1.0;
+}
+
+.beard-choice input[type="radio"] {
+    display: none;
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    margin-top: 30px;
+    background: #fff484;
+}
+
+.date {
+    font-size: 0;
+}
+
+.date input {
+    display: inline-block;
+    width: 50%;
+}
+
+#upload_photo {
+    display: none;
+}

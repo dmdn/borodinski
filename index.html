@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Borodinski</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="clesrfix">
+    <div class="logo">
+        <a href="index.html">barbershop</a>
+    </div>
+
+    <div class="head-info">
+        <h1>Borodinski</h1>
+        <h3>Запись на стрижку</h3>
+    </div>
+</header>
+
+<div class="baner">
+    <picture>
+        <img src="img/logo-big.png" width="360" height="200" alt="">
+    </picture>
+</div>
+
+<div class="form-block">
+    <form class="writing-haircut">
+        <div class="registration">
+            <h2>Запись на стрижку</h2>
+            <input type="text" name="" placeholder="Представтесь, пожалуйста">
+            <div class="date">
+                <input type="date" name="">
+                <input type="time" name="">
+            </div>
+            <select>
+                <option>Борис Бритва</option>
+                <option>Суини Тодд</option>
+                <option>Фредди Крюгер</option>
+                <option>Эдвард Руки-ножницы</option>
+            </select>
+        </div>
+
+        <div class="beard-choice">
+            <h2>Выберите модель бороды</h2>
+            <input type="radio" id="btn-1" name="toggle">
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">
+            <input type="radio" id="btn-4" name="toggle">
+            <input type="radio" id="btn-5" name="toggle">
+            <input type="radio" id="btn-6" name="toggle">
+            <input type="radio" id="btn-7" name="toggle">
+            <input type="radio" id="btn-8" name="toggle">
+            <input type="radio" id="btn-9" name="toggle">
+            <input type="radio" id="btn-10" name="toggle">
+
+            <div class="beard-controls">
+
+                <label for="btn-1">
+                    <figure class="beard">
+                        <source>
+                        <picture>
+                            <img src="img/beard-01.jpg" width="100" height="141" alt="image">
+                        </picture>
+                    </figure>
+                </label>
+
+                <label for="btn-2">
+                    <figure class="beard">
+                        <source>
+                        <picture>
+                            <img src="img/beard-02.jpg" width="100" height="141" alt="image">
+                        </picture>
+                    </figure>
+                </label>
+
+                <label for="btn-3">
+                    <figure class="beard">
+                        <source>
+                        <picture>
+                            <img src="img/beard-03.jpg" width="100" height="141" alt="image">
+                        </picture>
+                    </figure>
+                </label>
+
+                <label for="btn-4">
+                    <figure class="beard">
+                        <source>
+                        <picture>
+                            <img src="img/beard-04.jpg" width="100" height="141" alt="image">
+                        </picture>
+                    </figure>
+                </label>
+
+                <label for="btn-5">
+                    <figure class="beard">
+                        <source>
+                        <picture>
+                            <img src="img/beard-05.jpg" width="100" height="141" alt="image">
+                        </picture>
+                    </figure>
+                </label>
+
+                <label for="btn-6">
+                    <figure class="beard">
+                        <source>
+                        <picture>
+                            <img src="img/beard-06.jpg" width="100" height="141" alt="image">
+                        </picture>
+                    </figure>
+                </label>
+
+                <label for="btn-7">
+                    <figure class="beard">
+                        <source>
+                        <picture>
+                            <img src="img/beard-07.jpg" width="100" height="141" alt="image">
+                        </picture>
+                    </figure>
+                </label>
+
+                <label for="btn-8">
+                    <figure class="beard">
+                        <source>
+                        <picture>
+                            <img src="img/beard-08.jpg" width="100" height="141" alt="image">
+                        </picture>
+                    </figure>
+                </label>
+
+                <label for="btn-9">
+                    <figure class="beard">
+                        <source>
+                        <picture>
+                            <img src="img/beard-09.jpg" width="100" height="141" alt="image">
+                        </picture>
+                    </figure>
+                </label>
+
+                <label for="btn-10">
+                    <figure class="beard">
+                        <source>
+                        <picture>
+                            <img src="img/beard-10.jpg" width="100" height="141" alt="image">
+                        </picture>
+                    </figure>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="beard-options">
+            <h2>Параметры бороды</h2>
+            <span>Длина:</span>
+            <div class="change-block beard_length-block">
+                <button class="count-minus">-</button>
+                <input type="text" id="beard_length" name="beard_length" placeholder="0">
+                <button class="count-plus">+</button>
+            </div>
+            <span>Ширина:</span>
+            <div class="change-block beard_width-block">
+                <button class="count-minus">-</button>
+                <input type="text" id="beard_width" name="beard_width" placeholder="0">
+                <button class="count-plus">+</button>
+            </div>
+        </div>
+
+        <div class="photo-block">
+            <p>Загрузите фотографии, которые могут помоч мастеру понять какую стрижку бороды вы хотите.</p>
+            <input type="file" id="upload_photo" name="upload_photo" value="Загрузить фото" multiple>
+
+            <div class="upload-images">
+
+                <ul class="upload-images_list">
+
+                    <li class="upload-images_item">
+                        <label for="upload_photo">
+                            <div class="upload-images_img-wrap add">
+                                <img src="img/add.png" alt="add" title="Добавить фото">
+                            </div>
+                        </label>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+        <input type="submit" id="submit" name="btn" value="Отправить заявку">
+
+    </form>
+</div>
+
+<footer>
+    <div class="foot"></div>
+</footer>
+
+
+<script id="image-template" type="text/html">
+
+    <div class="upload-images_img-wrap">
+        <img src="{{image}}" alt="{{name}}" title="{{name}}">
+    </div>
+    <a href="#" class="delete-btn" title="Удалить"></a>
+
+</script>
+
+
+<script src='js/vendors/mustache.min.js'></script>
+<script src='js/counter.js'></script>
+<script src='js/main.js'></script>
+
+
+</body>
+</html>
